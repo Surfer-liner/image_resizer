@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Image Resizing Application
 
 This is a Django application that allows you to resize images. It provides an API for uploading images and obtaining resized copies with specified size parameters.
@@ -45,7 +44,3 @@ The application logs informational messages and errors to a log file named `imag
 
 - The application uses the Python Imaging Library (PIL) to resize images.
 - Resized images are saved in the `resized_images` directory within the media directory.
-
-=======
-# image_resizer
->>>>>>> a237cb0024768a55e8d9e5d347920512e21a93bf

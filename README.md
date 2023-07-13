@@ -17,6 +17,7 @@ This is a Django application that allows you to resize images. It provides an AP
 6. Start the Django development server:
 
 `python manage.py runserver`
+
 7. The application will be accessible at 
 [http://localhost:8000/](http://localhost:8000/).
 

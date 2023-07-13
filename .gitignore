@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+*.swp
+__pycache__/
+/image_resizer/db.sqlite3
+/v_env
+/image_resizer/media
+/image_resizer/image_hub.log

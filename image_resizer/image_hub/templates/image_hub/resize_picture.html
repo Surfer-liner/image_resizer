@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Resizer</title>
+</head>
+<body>
+    <h1>Image Resizer</h1>
+    {% if error %}
+        <p>Error: {{ error }}</p>
+    {% elif message %}
+        <p>{{ message }}</p>
+        {% if image_url %}
+            <img src="{{ image_url }}" alt="Resized Image">
+        {% endif %}
+    {% endif %}
+    <form method="post" action="{% url 'image_hub:resize_picture' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="width">Width:</label>
+        <input type="number" name="width" required>
+        <br>
+        <label for="height">Height:</label>
+        <input type="number" name="height">
+        <br>
+        <label for="file">Image:</label>
+        <input type="file" name="file" accept="image/*" required>
+        <br>
+        <input type="submit" value="Resize">
+    </form>
+</body>
+</html>
